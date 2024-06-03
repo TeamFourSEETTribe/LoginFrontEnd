@@ -37,7 +37,7 @@ const AstrologerRegister = () => {
             )
             .required("Mobile number is required"),
           aadhar_number: Yup.string()
-            .matches(/^\d{12}$/, "Aadhar number must be exactly 12 digits")
+            .matches(/^\d{16}$/, "Aadhar number must be exactly 12 digits")
             .required("Aadhar number is required"),
           dob: Yup.date()
             .required("Date of birth is required")
